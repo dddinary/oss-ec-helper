@@ -1,0 +1,62 @@
+.oss-error-code {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #1890ff;
+  }
+  
+  .oss-tooltip {
+    position: absolute;
+    z-index: 9999;
+    background: white;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    font-size: 14px;
+    line-height: 1.5;
+    display: none;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none; /* 初始状态下不接受鼠标事件 */
+  }
+  
+  .oss-tooltip.show {
+    display: block;
+    pointer-events: auto; /* 显示状态下接受鼠标事件 */
+  }
+  
+  .oss-tooltip-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .oss-tooltip-content {
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  .oss-tooltip-reason {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px dashed #e8e8e8;
+    color: #666;
+    white-space: pre-line; /* 保留换行符 */
+  }
+  
+  .oss-tooltip-link {
+    margin-top: 12px;
+    padding: 4px 8px;
+    color: #1890ff;
+    cursor: pointer;
+    display: inline-block;
+    text-align: right;
+    font-size: 13px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .oss-tooltip-link:hover {
+    background-color: #e6f7ff;
+    text-decoration: underline;
+  } 
